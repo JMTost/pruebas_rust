@@ -1,0 +1,34 @@
+DEntro de la configuración del proyecto de rust empleando actix y diesel, es necesario seguir los siguientes pasos
+
+cargo new --lib NOMBRE_PROYECTO
+cd NOMBRE_PROYECTO
+
+dentro del archivo Cargo.toml se debe colocar la siguiente información 
+
+[package]
+name = "api_prueba"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4"
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+disel = {version = "1.4.4", features = ["postgres"]}
+dotenv = "0.15.0"
+
+una vez colocado, en este caso el manejador de base de datos es postgresql 
+
+cargo install diesel_cli --no-default-features --features postgres
+
+Lo que sigue es que dentro del proyecto se debe crear el archivo .env, con la siguiente información 
+
+DATABASE_URL=postgres://postgres:postgres@localhost/rust_postgres
+
+modificando la información contenida dentro de la liga de postgresql
+
+seguido se debe ejecutar el comando diesel setup 
+
+una vez ejecutado, es necesario ahora correr:
+
+diesel migration generate NOMBRE ARCHIVO

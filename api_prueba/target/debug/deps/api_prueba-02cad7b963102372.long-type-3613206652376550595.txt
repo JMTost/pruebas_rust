@@ -1,0 +1,2 @@
+query_builder::where_clause::WhereClause<diesel::expression::operators::Eq<api_prueba::schema::usuarios::id, u32>>
+diesel::query_builder::SelectStatement<api_prueba::schema::usuarios::table, query_builder::select_clause::DefaultSelectClause, query_builder::distinct_clause::NoDistinctClause, query_builder::where_clause::WhereClause<diesel::expression::operators::Eq<api_prueba::schema::usuarios::id, u32>>, query_builder::order_clause::NoOrderClause, query_builder::limit_clause::LimitClause<diesel::expression::bound::Bound<BigInt, i64>>>

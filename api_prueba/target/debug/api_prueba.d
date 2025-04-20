@@ -1,0 +1,1 @@
+/home/jesus/Documentos/conexion_postgres/api_prueba/target/debug/api_prueba: /home/jesus/Documentos/conexion_postgres/api_prueba/src/lib.rs /home/jesus/Documentos/conexion_postgres/api_prueba/src/main.rs /home/jesus/Documentos/conexion_postgres/api_prueba/src/models/mod.rs /home/jesus/Documentos/conexion_postgres/api_prueba/src/schema/mod.rs

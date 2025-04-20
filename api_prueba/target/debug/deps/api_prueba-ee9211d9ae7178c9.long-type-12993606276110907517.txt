@@ -1,0 +1,1 @@
+fn(actix_web::web::Data<Pool<ConnectionManager<PgConnection>>>) -> impl std::future::Future<Output = impl Responder> {get_user}: HttpServiceFactory

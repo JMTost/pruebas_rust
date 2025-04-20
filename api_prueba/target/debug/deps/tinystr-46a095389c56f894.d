@@ -1,0 +1,12 @@
+/home/jesus/Documentos/conexion_postgres/api_prueba/target/debug/deps/libtinystr-46a095389c56f894.rmeta: /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs
+
+/home/jesus/Documentos/conexion_postgres/api_prueba/target/debug/deps/tinystr-46a095389c56f894.d: /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs /home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs
+
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs:
+/home/jesus/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs:

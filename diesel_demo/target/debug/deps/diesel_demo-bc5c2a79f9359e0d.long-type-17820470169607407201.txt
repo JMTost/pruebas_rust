@@ -1,0 +1,1 @@
+Usuario: Queryable<(diesel::sql_types::Integer, diesel::sql_types::Text, diesel::sql_types::Text), Pg>
