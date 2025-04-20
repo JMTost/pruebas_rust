@@ -1,137 +1,41 @@
+# API de Gestión de Usuarios
 
-# 📘 API de Gestión de Usuarios
+Descripción: API RESTful desarrollada con Rust, Actix Web y Diesel. Permite registrar, consultar, actualizar y activar usuarios en una base de datos PostgreSQL.
 
-  
-
-API RESTful desarrollada con **Rust**, **Actix Web** y **Diesel**. Permite registrar, consultar, actualizar y activar usuarios almacenados en una base de datos PostgreSQL.
-
-  
-
----
-
-  
-
-## 🔧 Requisitos
-
-  
-
-- Rust
-
-- PostgreSQL
-
-- Diesel CLI
-
-Instalar con:
-
+Requisitos:
 ```
+    Rust
 
+    PostgreSQL
+
+    Diesel CLI
+```
+Instalación de Diesel CLI: 
+```
 cargo install diesel_cli --no-default-features --features postgres
 ```
-Archivo .env con la variable DATABASE_URL.
+Archivo .env: Debe contener la variable: DATABASE_URL=postgres://usuario:password@localhost/mi_base
 
-Ejemplo:
-```
-DATABASE_URL=postgres://usuario:password@localhost/mi_base
-```
-----
-# 🚀 Ejecución  
+Ejecución:
 
-Ejecuta las migraciones con Diesel (si ya están definidas):
+    Ejecutar las migraciones con Diesel: diesel migration run
 
-Corre la API:
-```
-cargo run
-```
-  
+    Ejecutar la API: cargo run
 
-La API estará disponible en:
+La API estará disponible en: http://127.0.0.1:3000
 
-http://127.0.0.1:3000
+Endpoints Disponibles:
 
----  
+    Crear Usuario URL: /creaUsuario Método: POST Body: { "id": 0, "nombre": "Maximiliano Navarro", "email": "maximiliano@example.com", "edad": 25, "tipousuario": "Capturista", "activo": false } Respuesta: Objeto JSON del usuario creado
 
-# 📚 Endpoints Disponibles
+    Obtener Todos los Usuarios URL: /obtenUsuarios Método: GET Respuesta: [ { "activo": true, "edad": 30, "email": "jesust@example.com", "nombre": "Jesus Mateo", "tipousuario": "Administrador" }, { "activo": true, "edad": 25, "email": "maximiliano@example.com", "nombre": "Maximiliano Navarro", "tipousuario": "Capturista" } ]
 
- 1.  Crear Usuario
+    Obtener Usuario por ID URL: /obtenUsuario/{id} Método: GET Respuesta: { "activo": false, "edad": 24, "email": "jesust@example.com", "nombre": "Jesus M T", "tipousuario": "Administrador" }
 
-URL: /creaUsuario
-Método: POST
-Body (JSON):
-{
+    Actualizar Usuario URL: /actualizaUsuario/{id} Método: PUT Body: { "id": 0, "nombre": "Jesus Mateo", "email": "jesust@example.com", "edad": 30, "tipousuario": "Administrador", "activo": true } Respuesta: { "mensaje": "Se modifico el usuario de forma exitosa", "dato": 1 }
 
-"id": 0,
-"nombre": "nombre",
-"email": "nombre@example.com",
-"edad": 25,
-"tipousuario": "Capturista",
-"activo": false
-}
-  Respuesta: Objeto JSON del usuario creado.
+    Activar Usuario URL: /actualizaEstadoUsuario/{id} Método: PUT Descripción: Cambia el campo activo del usuario a true. Respuesta: { "mensaje": "Se actualizo de forma exitosa el estado del usuario", "id": 2, "dato": 1 }
 
- 2. Obtener Todos los Usuarios
-URL: /obtenUsuarios
-Método: GET
-Respuesta (ejemplo):
-[
-{
-"activo": true,
-"edad": 30,
-"email": "jesust@example.com",
-"nombre": "Jesus Toledo",
-"tipousuario": "Administrador"
-},
-{
-"activo": true,
-"edad": 25,
-"email": "nombre@example.com",
-"nombre": "nombre",
-"tipousuario": "Capturista"
-}
-]
- 3. Obtener Usuario por ID
-URL: /obtenUsuario/{id}
-Método: GET
-Respuesta (ejemplo):
-{
-"activo": false,
-"edad": 24,
-"email": "jesust@example.com",
-"nombre": "Jesus Toledo",
-"tipousuario": "Administrador"
-}
-4. Actualizar Usuario
-URL: /actualizaUsuario/{id}
-Método: PUT
-Body (JSON):
-{
-"id": 0,
-"nombre": "Jesus Toledo",
-"email": "jesust@example.com",
-"edad": 30,
-"tipousuario": "Administrador",
-"activo": true
-}
-Respuesta (ejemplo):
-{
-"mensaje": "Se modifico el usuario de forma exitosa",
-"dato": 1
-}
-5. Activar Usuario
-URL: /actualizaEstadoUsuario/{id}
-Método: PUT
-Descripción: Cambia el campo activo a true.
-Respuesta (ejemplo):
-{
-"mensaje": "Se actualizo de forma exitosa el estado del usuario",
-"id": 2,
-"dato": 1
-}
-----
-  
+Pruebas con Postman:
 
-🧪 Pruebas con Postman
-
-  
-
-Puedes usar los ejemplos anteriores para probar cada endpoint.
-
+Puedes usar los ejemplos anteriores como base para probar cada endpoint manualmente desde Postman u otra herramienta de pruebas HTTP.# Markdown syntax guide
